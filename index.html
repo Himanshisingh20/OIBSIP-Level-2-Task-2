@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Tribute Page</title>
+</head>
+<body>
+    <h1>A Tribute to these Inspirations</h1>
+    <hr>
+
+    <div class="container">
+        <div class="left">
+            <div class="pic">
+            </div>
+            <div class="leftcontent">
+                <h2>B.R. Ambedkar</h2>
+                <p>Recognised as the chief architect of the Indian constitution, Bhimrao Ramji Ambedkar was born on April 14, 1891, in Madhya Pradesh. His qualifications didn’t lie within the realm of politics alone as Ambedkar was also recognised as an economist and as a social reformer. Educated at some of the finest educational institutions in the world ranging from the London School of Economics to Columbia University, Ambedkar used his wits to tackle discrimination at the grass-root level. The Dalit Buddhist movement is credited to him. This campaign helped him successfully tackle social discrimination that had plagued Dalits.</p>
+              
+                </div>   
+        </div>
+        
+        <div class="rite">
+            <div class="ritecontent">
+                <h2>APJ Abdul Kalam</h2>
+                <p>Qualified as a professional scientist, APJ Abdul Kalam served as the country’s 11th president and was often termed the people’s president. The early years of his life weren’t easy as Kalam was born into a home of modest means. In order to support his family though, he began selling the local newspaper at a newsstand in order to support his family. Later on, as a student, he wasn’t perceived to be the brightest spark, however, his continued hard work allowed him to achieve success.
+            </div>
+    
+            </div>
+            <div class="leftcontent">
+                <h2>Dhyan Chand</h2>
+                <p>Dhyan Chand is recognised as one of the finest hockey players the country has ever seen. Born on August 29, 1905, in Allahabad, Dhyan Chand was a member of the Indian Hockey team who went on to win three gold Olympic medals. During his time as a member, Dhyan Chand helped the Indian hockey team acquire great success. This is evident from the fact that he helped them walk away as Olympic winners on seven out of eight occasions in the time between 1928 and 1964. His ability to score goals led him to be a legendary hockey player.
+        </div>
+
+        <div class="rite">
+            <div class="ritecontent">
+                <h2>Dhirubhai Ambani</h2>
+                <p>Unless you’ve been living under a rock, you are likely to be familiar with the Reliance brand. Dhirubhai Ambani was the founder of Multinational Reliance Industries. Born on December 28, 1932, to a working-class family, Dhirubhai Ambani faced a string of struggles as a child. As a young adult, he moved to Yemen where he worked as an attendant clerk at a gas station. As there didn’t seem to be much upward mobility within this position, Dhirubhai chose to move back to India in 1958. With just INR 50,000 he began a textile company with his cousin. Ultimately though, he chose to export goods for a more affordable price than his competitors owing to which he experienced enormous success.
+            </div>
+        </div>
+
+        <div class="left">
+            <div class="leftcontent">
+                <h2>Sachin Tendulkar</h2>
+                <p>Cricket is one of India’s most popular sports and is often associated with the iconic Sachin Tendulkar. Born on April 24, 1973, Sachin is a living legend in the realm of cricket and has received a number of accolades owing to his performance on the field.
+        </div>
+    </div>
+    
+    <script>
+        function myFunction(value) {
+            var dots = document.getElementById(`dots${value}`);
+            var moreText = document.getElementById(`more${value}`);
+            var btnText = document.getElementById(`myBtn${value}`);
+
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                btnText.innerHTML = "Show more";
+                moreText.style.display = "none";
+            } 
+            else {
+                dots.style.display = "none";
+                btnText.innerHTML = "Read less";
+                moreText.style.display = "inline";
+            }
+        }
+    </script>
+</body>
+</html>
